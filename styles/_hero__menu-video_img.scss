@@ -1,0 +1,39 @@
+.menu {
+    &__video-container {
+        position: relative;
+        display: inline-block;
+    }
+    &__video-img {
+        position: relative;
+        display: inline-block;
+    }
+
+
+@media (max-width: 480px) {
+    max-width: 480px;
+    &__video-container {
+        padding-bottom: 2.5rem;
+        position: relative;
+        display: inline-block;
+    }
+    &__video-img {
+        position: relative;
+        display: inline-block;
+       
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1440px)  {
+    &__video-container {
+        padding-bottom: 2.5rem;
+        position: relative;
+        display: inline-block;
+    }
+    &__video-img {
+        position: relative;
+        display: inline-block;
+        width: 107%;
+        height: 100;
+    }
+}
+}

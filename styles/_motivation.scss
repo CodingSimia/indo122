@@ -1,0 +1,25 @@
+.motivation {
+    background-image: url('/images/motivation_back.png');
+    background-size: 100% auto; /* Adjust the size as needed */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    background-position: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    text-align: center; 
+    &__title {
+        padding-top: 248px;
+        color: #000;
+        max-width: 600px;
+    }
+    &__sub-title {
+        padding-top: 32px;
+        color: #6F7787;
+        max-width: 500px;
+    }
+    &__button {
+        margin-top: 55px;
+        margin-bottom: 276px;
+    }
+}

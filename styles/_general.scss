@@ -1,0 +1,54 @@
+
+$button-color: #DD2242;
+$title-color: #fff;
+$sub-title-color: #E0E0E0;
+
+.button {
+    // button layout design
+    border-radius: 211px;
+    background: $button-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    // button text design
+    color: rgba(255, 255, 255, 0.80);
+    text-align: center;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+
+    &:hover {
+        background-color: darken($button-color, 10%);
+    }
+    
+    &:active {
+        background-color: darken($button-color, 20%);
+        transform: scale(0.95);
+    }
+}
+
+.title {
+    color: $title-color;
+    
+    /* H3 */
+    font-family: DM Sans;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px; /* 119.048% */
+}
+
+.sub-title {
+    color: $sub-title-color;
+
+    /* Paragraph */
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 155.556% */
+    letter-spacing: 0.18px;
+}

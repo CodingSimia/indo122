@@ -1,0 +1,45 @@
+.slider__bottom {
+    margin-top: 50%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/images/slider_back2.svg");
+    &__titles {
+        p {
+            text-align: center;
+            max-width: 500px;
+            display: block; /* Add this line */
+            margin: 0 auto; /* Center-align the block element */
+        }
+        &__title {
+            padding-top: 60px;
+        }
+        &__sub-title {
+            color: #E0E0E0;
+            padding-top: 37px;
+        }
+    }
+    &__blocks {
+        padding-left: 320px;
+        padding-right: 320px;
+        padding-top: 40px;
+        padding-bottom: 245px;
+        display: flex;
+    }
+    &__descr {
+        text-align: center;
+        &__title {
+            color: #DD2242;
+            font-size: 42.137px;
+            font-style: normal;
+            font-weight: 700;
+        }
+        &__sub-title {
+            color: #E0E0E0;
+            padding-top: 19px;
+        }
+        &__center {
+            padding: 0 120px;
+        }
+    }
+}
