@@ -1,15 +1,77 @@
+.slick {
+    &-list {
+        overflow: hidden;
+    }
+    &-track{
+        display: flex;
+    }
+    &-arrow {
+        margin: -50px 0px 0px 0px;
+        z-index: 10;
+        position: absolute;
+        top: 50%;
+        font-size: 0;
+        width: 30px;
+        height: 60px;
+        &.slick-prev{
+            left: 0;
+            background: url("/images/left_arr.svg") 0 0 / 100% no-repeat;
+        }
+        &.slick-next{
+            right: 0;
+            background: url("/images/right_arr.svg") 0 0 / 100% no-repeat;
+        }
+    }
+    &-dots{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        li {
+            padding: 1% 0;
+            margin: 0 10px;
+            &.slick-active button{
+                list-style: none;
+                background-color: #DD2242;
+                
+            }
+            button {
+                font-size: 0;
+                width: 10px;
+                height: 10px;
+                background-color: #85A3B2;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+.slider {
+    position: relative;
+    &__block {
+        background-image: url("/images/slider_background.png");
+        background-size: cover;
+        background-position: center center;   
+    }
+    &__title {
+        color: #000;
+        text-align: center;
+        padding-top: 127px;
+        padding-bottom: 40px;
+    }
+}
+
 .slider__bottom {
-    margin-top: 50%;
+    background-image: url("/images/slider_back2.svg");
+    margin-top: 55%;
     display: block;
     justify-content: center;
     align-items: center;
-    background-image: url("/images/slider_back2.svg");
     &__titles {
         p {
             text-align: center;
             max-width: 500px;
-            display: block; /* Add this line */
-            margin: 0 auto; /* Center-align the block element */
+            display: block; 
+            margin: 0 auto; 
         }
         &__title {
             padding-top: 60px;
