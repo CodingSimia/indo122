@@ -12,9 +12,11 @@ body, html {
   overflow-x: hidden;
 
 }
-
+.header__container {
+    max-width: 1868px;
+}
 .container {
-    max-width: 1900px;
+    max-width: 1278px;
     margin: 0 auto;
     box-sizing: border-box;
 }
